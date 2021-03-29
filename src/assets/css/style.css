@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root{
+    --primary-color: #113366;
+    --second-color: #2c7cf3;
+    --disable-color: #a1b6d3;
+}
+
+*{
+    outline: 0;
+    font-family: 'Open sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+.container{
+    line-height: 1.8rem;
+    font-size: 1.3em;
+    max-width: 30rem;
+    max-height: 40rem;
+    margin: 6rem auto;
+    padding: 2rem 0rem 1rem;
+    border-radius: 1.5rem;
+    border: solid 1px #ffffff;
+}
+
+form{
+    text-align: left;
+    margin: 0 3rem;
+    color: #ffffff;
+    vertical-align: middle;
+}
+
+input{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ffffff;
+}
+
+input[type="number"]{
+    width: 2.8rem;
+    height: 1.8rem;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    line-height: 1em;
+    font-size: 0.8em;
+}
+
+h1{
+    padding: 0.55rem 0rem 0rem;
+    margin: 0.2rem 0 1rem;
+}
+
+h1, h2, button{
+    background-color: #ffffff;
+    color: var(--primary-color);
+    height: 3rem;
+}
+
+button{
+    width: 9rem;
+    font-size: 1.2em;
+    border-radius: 20rem;
+    border: none;
+    cursor: pointer;
+    margin: 1rem 7.9rem 0.1rem;
+}
+
+button:hover{
+    background-color: var(--second-color);
+    color: #ffffff;
+}
+
+#resultado{
+    background-color: var(--primary-color);
+    color: #ffffff;
+    max-height: 30rem;
+    word-wrap: break-word;
+    margin: 2rem auto;
+    text-transform: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        line-height: 1.9em;
+        font-size: 1.2em;
+    }
+}
+@media only screen and (max-width: 576px) {
+
+    body{
+        padding: 1rem 0.3rem;
+    }
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 2em;
+        font-size: 1.16em;
+    }
+}
