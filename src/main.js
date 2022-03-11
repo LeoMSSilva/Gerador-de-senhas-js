@@ -1,3 +1,3 @@
-import novaSenha from './modules/FormularioGeraSenha';
+import newPassword from './modules/generatePasswordForm';
 import './assets/css/style.css';
-novaSenha();
+newPassword();

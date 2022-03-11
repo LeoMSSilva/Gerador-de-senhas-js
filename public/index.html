@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Gerador de Senhas</title>
-    </head>
-    <body>
-        <section class="container">
-            <h1>
-                Gerador de Senhas:
-            </h1>
-            <h2 id="resultado"></h2>
-            <form action="">
-                <label for="tamanho">Tamanho da senha</label>
-                <input type="number" name="tamanho" id="tamanho" min="1" max="50">
-                <br>
-                <label for="numero">Números</label>
-                <input type="checkbox" name="numero" id="numero">
-                <br>
-                <label for="maiuscula">Letras maiúsculas</label>
-                <input type="checkbox" name="maiuscula" id="maiuscula">
-                <br>
-                <label for="minuscula">Letras minúsculas</label>
-                <input type="checkbox" name="minuscula" id="minuscula">
-                <br>
-                <label for="simbolo">Símbolos</label>
-                <input type="checkbox" name="simbolo" id="simbolo">
-                <br>
-                <button id="gerar">Gerar</button>
-            </form>
-        </section>
-        <script src="./assets/js/bundle.js"></script>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Gerador de Senhas</title>
+	</head>
+	<body>
+		<section class="container">
+			<h1>Gerador de Senhas:</h1>
+			<h2 id="result"></h2>
+			<form action="">
+				<label for="size">Tamanho da senha</label>
+				<input type="number" name="size" id="size" min="1" max="50" />
+				<br />
+				<label for="number">Números</label>
+				<input type="checkbox" name="number" id="number" />
+				<br />
+				<label for="uppercase">Letras maiúsculas</label>
+				<input type="checkbox" name="uppercase" id="uppercase" />
+				<br />
+				<label for="lowercase">Letras minúsculas</label>
+				<input type="checkbox" name="lowercase" id="lowercase" />
+				<br />
+				<label for="symbol">Símbolos</label>
+				<input type="checkbox" name="symbol" id="symbol" />
+				<br />
+				<button id="generate">Gerar</button>
+			</form>
+		</section>
+		<script src="./assets/js/bundle.js"></script>
+	</body>
 </html>
