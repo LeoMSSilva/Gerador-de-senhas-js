@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
-	--white: #ffffff;
-	--primary-color: #113366;
-	--second-color: #2c7cf3;
-	--disable-color: #a1b6d3;
+	--white: #fcfcfc;
+	--primary-color: #003f9e;
+	--second-color: #4a8ff7;
+	--disable-color: #fcfcfcb3;
 }
 
 * {
@@ -17,13 +17,21 @@
 	padding: 0;
 }
 
+.disable {
+	color: var(--disable-color);
+}
+
 body {
 	background-color: var(--primary-color);
 }
 
 .container {
-	line-height: 1.8rem;
-	font-size: 1.3em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.8em;
+	font-size: 1.2em;
 	max-width: 30rem;
 	max-height: 40rem;
 	margin: 6rem auto;
@@ -32,22 +40,41 @@ body {
 	border: solid 1px var(--white);
 }
 
-form {
-	text-align: left;
-	margin: 0 3rem;
+#form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	color: var(--white);
-	vertical-align: middle;
+}
+
+#form .row {
+	display: flex;
+	flex-direction: row;
+	margin: 1rem 0;
+}
+
+#form .row .col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#form .row .col2 {
+	align-items: flex-start;
+	margin-left: 1rem;
+	line-height: 1.8em;
 }
 
 input {
 	width: 1rem;
-	height: 1rem;
+	height: 2rem;
 	border-radius: 0.5rem;
 	border: 1px solid var(--white);
 }
 
 input[type='number'] {
-	width: 2.8rem;
+	width: 3rem;
 	height: 1.8rem;
 	color: var(--white);
 	background-color: var(--primary-color);
@@ -56,8 +83,11 @@ input[type='number'] {
 }
 
 h1 {
-	padding: 0.55rem 0rem 0rem;
-	margin: 0.2rem 0 1rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
 }
 
 h1,
@@ -74,7 +104,6 @@ button {
 	border-radius: 20rem;
 	border: none;
 	cursor: pointer;
-	margin: 1rem 7.9rem 0.1rem;
 }
 
 button:hover {
@@ -85,26 +114,72 @@ button:hover {
 #result {
 	background-color: var(--primary-color);
 	color: var(--white);
-	max-height: 30rem;
+	max-width: 96%;
 	word-wrap: break-word;
-	margin: 2rem auto;
-	text-transform: none;
+	height: 8rem;
 }
 
 @media only screen and (max-width: 768px) {
 	.container {
-		line-height: 1.9em;
-		font-size: 1.2em;
+		line-height: 1.6em;
+	}
+
+	#form .row .col2 {
+		line-height: 1.6em;
+	}
+
+	input {
+		height: 1.5rem;
+	}
+
+	input[type='number'] {
+		width: 2.5rem;
+		height: 1.5rem;
+		font-size: 0.7125em;
 	}
 }
+
 @media only screen and (max-width: 576px) {
 	body {
-		padding: 1rem 0.3rem;
+		padding: 0 1rem;
 	}
+
 	.container {
-		margin-left: auto;
-		margin-right: auto;
-		line-height: 2em;
-		font-size: 1.16em;
+		line-height: 1.4em;
+		font-size: 1.1em;
+	}
+
+	#form .row .col2 {
+		line-height: 1.4em;
+	}
+
+	input {
+		height: 1.4rem;
+	}
+
+	input[type='number'] {
+		width: 2.4rem;
+		height: 1.3rem;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.container {
+		line-height: 1.2em;
+		font-size: 1em;
+	}
+
+	#form .row .col2 {
+		line-height: 1.2em;
+	}
+
+	input {
+		width: 0.8rem;
+		height: 1.3rem;
+	}
+
+	input[type='number'] {
+		width: 2.2rem;
+		height: 1.2rem;
+		font-size: 0.65em;
 	}
 }
