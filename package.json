@@ -1,13 +1,13 @@
 {
-  "name": "node",
+  "name": "passwordGenerator.js",
   "version": "1.0.0",
-  "description": "",
+  "description": "It is a random password generator.",
   "main": "main.js",
   "scripts": {
     "start": "webpack -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "LeoMSSilva",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.13.10",
