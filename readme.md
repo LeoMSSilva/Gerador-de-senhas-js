@@ -59,6 +59,8 @@ Or by ssh, running this command:
 
 SSH is a secure protocol, but you need to register a key ssh in your github before.
 
+---
+
 ## :hammer_and_wrench: Install dependencies
 
 ```bash
@@ -71,11 +73,17 @@ or
   yarn install
 ```
 
+---
+
 ## :rocket: Getting Started
+
+To run it, use in the terminal:
 
 ```bash
   yarn start
 ```
+
+And open the browser at: [link](http://localhost:8080)
 
 ---
 
